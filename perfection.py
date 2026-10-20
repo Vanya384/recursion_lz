@@ -3,11 +3,11 @@ def perfection(number):
         print("Ошибка,число неудовлетворяет нужному диапозону значений")
     arr=[]
     for i in range(1,number):
-        if(number%i==0):
+        if(number%i==0):   #если находим делитель числа,записываем его в массив
             arr.append(i)
     sum=0
-    for i in range(len(arr)):
-        sum+=arr[i]
+    for i in range(len(arr)):  #находим сумму элементов полученного массива
+        sum+=arr[i] 
     if number==sum:
         print(f"{number} - совершенное число")
         return 1
